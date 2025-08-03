@@ -1,11 +1,9 @@
-<!-- certificate.php -->
-<?php include("certificate.html"); ?>
-<!-- certificate.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Internship Certificate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
       box-sizing: border-box;
@@ -15,37 +13,30 @@
       font-family: Arial, sans-serif;
       background-color: skyblue;
       margin: 0;
-      padding: 20px;
+      padding: 0;
       text-align: center;
       color: #003366;
     }
 
-.container {
-  background: skyblue;
-  border-radius: 12px;
-  overflow: hidden;
-  min-height: 100vh; /* Allow container to expand beyond screen */
-  max-width: 1200px;
-  margin: 0 auto;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
+    .container {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      max-width: 900px;
+      margin: 20px auto;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    }
 
     .banner {
       width: 100%;
-      height: 50vh; /* 20% of screen height */
+      height: auto;
+      max-height: 250px;
       object-fit: cover;
+      display: block;
     }
 
     .content {
       padding: 30px 20px;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
     }
 
     .verified {
@@ -54,18 +45,17 @@
     }
 
     h2 {
-      color: yellow;
-      margin: 10px 0 20px;
+      color: #0073e6;
+      margin-bottom: 20px;
     }
 
     .certificate-details p {
       font-size: 16px;
       margin: 5px 0;
-color : blue;
     }
 
     .grade-box {
-      background-color: skyblue;
+      background-color: #f0f8ff;
       border: 1px solid #0073e6;
       border-radius: 10px;
       padding: 15px;
@@ -74,13 +64,12 @@ color : blue;
 
     .grade-box h3 {
       margin-bottom: 10px;
-      color: black;
+      color: #004080;
     }
 
     .grade-box ul {
       list-style: none;
       padding: 0;
-	color : red;
       text-align: left;
       max-width: 400px;
       margin: auto;
@@ -91,9 +80,30 @@ color : blue;
     }
 
     .logo-section .logo {
-      width: 250px;
-height : 150px;
+      width: 150px;
       margin: 30px auto 0;
+    }
+
+    @media (max-width: 600px) {
+      .verified {
+        width: 100px;
+      }
+
+      .logo-section .logo {
+        width: 100px;
+      }
+
+      .content {
+        padding: 20px 10px;
+      }
+
+      .certificate-details p {
+        font-size: 14px;
+      }
+
+      .banner {
+        max-height: 150px;
+      }
     }
   </style>
 </head>
