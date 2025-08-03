@@ -1,3 +1,5 @@
+<!-- certificate.php -->
+<?php include("certificate.html"); ?>
 <!-- certificate.html -->
 <!DOCTYPE html>
 <html lang="en">
